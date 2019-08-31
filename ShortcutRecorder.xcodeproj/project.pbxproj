@@ -24,6 +24,7 @@
 		0D6B24C0180304FA00CE1142 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B24B2180304FA00CE1142 /* main.m */; };
 		0D6B24C11803053800CE1142 /* ShortcutRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939837800DA42965007F53F3 /* ShortcutRecorder.framework */; };
 		0D6B24C31803057100CE1142 /* PTHotKey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E273122E1349EC9000A84433 /* PTHotKey.framework */; };
+		510CF538231AB16B00B5D312 /* PTHotKey_Class.h in Headers */ = {isa = PBXBuildFile; fileRef = 510CF537231AB16A00B5D312 /* PTHotKey_Class.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		939837950DA429EC007F53F3 /* SRRecorderControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E29C109CDB9360085E9ED /* SRRecorderControl.m */; };
 		939837980DA429EC007F53F3 /* SRKeyCodeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C3670D0A246B4900B69171 /* SRKeyCodeTransformer.m */; };
 		939837990DA429EC007F53F3 /* SRValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C3670F0A246B4900B69171 /* SRValidator.m */; };
@@ -181,6 +182,7 @@
 		0D6B24B2180304FA00CE1142 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0D6B24B3180304FA00CE1142 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = Library/Prefix.pch; sourceTree = "<group>"; };
+		510CF537231AB16A00B5D312 /* PTHotKey_Class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHotKey_Class.h; sourceTree = "<group>"; };
 		74C3670C0A246B4900B69171 /* SRKeyCodeTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRKeyCodeTransformer.h; path = Library/SRKeyCodeTransformer.h; sourceTree = "<group>"; };
 		74C3670D0A246B4900B69171 /* SRKeyCodeTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SRKeyCodeTransformer.m; path = Library/SRKeyCodeTransformer.m; sourceTree = "<group>"; };
 		74C3670E0A246B4900B69171 /* SRValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRValidator.h; path = Library/SRValidator.h; sourceTree = "<group>"; };
@@ -553,6 +555,7 @@
 			children = (
 				BA10595C1689CEBF00A3DDF5 /* Supporting Files */,
 				0B8E2A0309CDBADE0085E9ED /* PTHotKey.h */,
+				510CF537231AB16A00B5D312 /* PTHotKey_Class.h */,
 				0B8E2A0409CDBADE0085E9ED /* PTHotKey.m */,
 				0B8E2A0509CDBADE0085E9ED /* PTHotKeyCenter.h */,
 				0B8E2A0609CDBADE0085E9ED /* PTHotKeyCenter.m */,
@@ -593,6 +596,7 @@
 				E273123C1349EDB500A84433 /* PTKeyCodeTranslator.h in Headers */,
 				E273123D1349EDB500A84433 /* PTKeyCombo.h in Headers */,
 				E2BE927C16AC052000827E8C /* PTHotKey+ShortcutRecorder.h in Headers */,
+				510CF538231AB16B00B5D312 /* PTHotKey_Class.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1050,6 +1054,7 @@
 				CLANG_X86_VECTOR_INSTRUCTIONS = ssse3;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -1074,6 +1079,7 @@
 				CLANG_X86_VECTOR_INSTRUCTIONS = ssse3;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
