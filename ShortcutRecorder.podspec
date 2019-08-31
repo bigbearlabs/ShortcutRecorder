@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name = 'ShortcutRecorder'
   s.homepage = 'https://github.com/Kentzo/ShortcutRecorder'
-  s.summary = 'Pod version of ShortcutRecorder 2'
-  s.version = '2.16'
+  s.summary = 'The only user interface control to record shortcuts. For Mac OS X 10.6+, 64bit'
+  s.version = '2.17'
   s.source = { :git => 'git://github.com/Kentzo/ShortcutRecorder.git', :branch => 'master' }
   s.author = { 'Ilya Kulakov' => 'kulakov.ilya@gmail.com' }
   s.frameworks = 'Carbon', 'Cocoa'
